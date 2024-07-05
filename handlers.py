@@ -127,26 +127,26 @@ async def register_handlers(dp: Dispatcher, bot_token):
 
             database.add_user(user_id, bot_token)
 
-        welcome_message = ("⚔️💣 ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН 💣 ⚔️\n"
-                           "🏴‍☠️🏴‍☠️🏴‍☠️  Д Ж Е К В О Р О Б Е Й  🏴‍☠️🏴‍☠️🏴‍☠️\n\n"
-                           "💈РАЙОНЫ ГДЕ ВЫ МОЖЕТЕ КУПИТЬ НАШ ТОВАР\n"
-                           "🔻🔻🔻\n"
-                           "СПБ | ЛУГА | ЛОМОНОСОВ | КОЛПИНО | КРОНШТАДТ | ВЫБОРГ | СОСНОВЫЙ БОР | ВЕЛИКИЙ НОВГОРОД\n\n"
-                           "⚜️ Работаем для ВАС — 24/7 ⚜️\n"
-                           "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
-                           "ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ НАШ НОМЕР ТЕЛЕФОНА +56 9 5431 2704 , который всегда будет с нами,поэтому не забудьте добавить его в контакты.\n\n"
-                           "💰 💰 💰СПОСОБЫ ОПЛАТЫ:💰 💰 💰\n\n"
-                           "ОПЛАТА НА КАРТУ БАНКА\n"
-                           "EXMO-кодом\n"
-                           "BTC, LTC, BCH\n"
-                           "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n"
-                           "ОФОРМИТЬ ЗАКАЗ 👇🏿👇🏿👇🏿\n"
-                           "◾️ Товары и цены\n"
-                           "<i>Жми</i> 👉 /products\n\n"
+        welcome_message = ("<b>✔️ВАС ПРИВЕТСТВУЕТ МАРК МИРОНОВ✔️\n"
+                           "🔊Мы предлагаем вам:\n"
+                           "💥Лучшее качество💥\n"
+                           "💰Самые низкие цены 💰\n"
+                           "☀️Свежие клады☀️\n"
+                           "📆Ежедневное пополнение 📆\n"
+                           "💯Конкурсы💯Игры 💯 Каждый день\n"
+                           "Для получения Реквизитов - по поводу оплат писать на данный Юзер @mrsm_111 \n</b>\n"
+                           "<b>Для получения Реквизитов - по поводу оплат писать на данный Юзер @mrsm_111  !!!!! (ВНИМАНИЕ)!!!!!\n"
+                           "ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ ИМЕННО ЭТОТ ЮЗЕР!!!!!!!</b>\n\n\n"
+                           "Выберите раздел\n\n"
+                           "📦 Товары и цены\n"
+                           "<i>Жми</i> 👉 /products\n"
+                           "- - - - - - - - - - - - - - - -\n"
                            "🌆 Выбрать район\n"
-                           "<i>Жми</i> 👉 /locations\n\n"
+                           "<i>Жми</i> 👉 /locations\n"
+                           "- - - - - - - - - - - - - - - -\n"
                            "💰 Мой последний заказ\n"
-                           "<i>Жми</i> 👉 /last_order\n"
+                           "<i>Жми</i> 👉 /last_order\n\n"
+                           "По работе и любым вопросам обращаться к @mrsm_111 \n\n"
                            "- - - - - - - - - - - - - - - -\n"
                            "📦 Типы клада\n"
                            "<i>Жми</i> 👉 /storage_types")
@@ -169,26 +169,26 @@ async def register_handlers(dp: Dispatcher, bot_token):
             database.add_user(user_id, bot_token)
             await state.finish()
 
-            welcome_message = ("⚔️💣 ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН 💣 ⚔️\n"
-                               "🏴‍☠️🏴‍☠️🏴‍☠️  Д Ж Е К В О Р О Б Е Й  🏴‍☠️🏴‍☠️🏴‍☠️\n\n"
-                               "💈РАЙОНЫ ГДЕ ВЫ МОЖЕТЕ КУПИТЬ НАШ ТОВАР\n"
-                               "🔻🔻🔻\n"
-                               "СПБ | ЛУГА | ЛОМОНОСОВ | КОЛПИНО | КРОНШТАДТ | ВЫБОРГ | СОСНОВЫЙ БОР | ВЕЛИКИЙ НОВГОРОД\n\n"
-                               "⚜️ Работаем для ВАС — 24/7 ⚜️\n"
-                               "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
-                               "ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ НАШ НОМЕР ТЕЛЕФОНА +56 9 5431 2704 , который всегда будет с нами,поэтому не забудьте добавить его в контакты.\n\n"
-                               "💰 💰 💰СПОСОБЫ ОПЛАТЫ:💰 💰 💰\n\n"
-                               "ОПЛАТА НА КАРТУ БАНКА\n"
-                               "EXMO-кодом\n"
-                               "BTC, LTC, BCH\n"
-                               "➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n"
-                               "ОФОРМИТЬ ЗАКАЗ 👇🏿👇🏿👇🏿\n"
-                               "◾️ Товары и цены\n"
-                               "<i>Жми</i> 👉 /products\n\n"
+            welcome_message = ("<b>✔️ВАС ПРИВЕТСТВУЕТ МАРК МИРОНОВ✔️\n"
+                           "🔊Мы предлагаем вам:\n"
+                           "💥Лучшее качество💥\n"
+                           "💰Самые низкие цены 💰\n"
+                           "☀️Свежие клады☀️\n"
+                           "📆Ежедневное пополнение 📆\n"
+                           "💯Конкурсы💯Игры 💯 Каждый день\n"
+                           "Для получения Реквизитов - по поводу оплат писать на данный Юзер @mrsm_111 \n</b>\n"
+                           "<b>Для получения Реквизитов - по поводу оплат писать на данный Юзер @mrsm_111  !!!!! (ВНИМАНИЕ)!!!!!\n"
+                           "ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ ИМЕННО ЭТОТ ЮЗЕР!!!!!!!</b>\n\n\n"
+                           "Выберите раздел\n\n"
+                           "📦 Товары и цены\n"
+                           "<i>Жми</i> 👉 /products\n"
+                               "- - - - - - - - - - - - - - - -\n"
                                "🌆 Выбрать район\n"
-                               "<i>Жми</i> 👉 /locations\n\n"
+                               "<i>Жми</i> 👉 /locations\n"
+                               "- - - - - - - - - - - - - - - -\n"
                                "💰 Мой последний заказ\n"
-                               "<i>Жми</i> 👉 /last_order\n"
+                               "<i>Жми</i> 👉 /last_order\n\n"
+                               "По работе и любым вопросам обращаться к @MRM1_111 \n\n"
                                "- - - - - - - - - - - - - - - -\n"
                                "📦 Типы клада\n"
                                "<i>Жми</i> 👉 /storage_types")
@@ -229,7 +229,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
             if match:
                 clean_name = product_name[:match.start()]
                 weight = match.group(1).strip()
-                display_name = f"◾️ {clean_name} ({weight})"
+                display_name = f"📦 {clean_name} ({weight})"
             else:
                 clean_name = product_name
                 display_name = clean_name
@@ -237,7 +237,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
             button_text = f"{clean_name} product_{product_price_id}_{product_name_id}"
             product_keyboard.add(types.KeyboardButton(button_text))
 
-            product_message += f"{display_name}<b>{discount_text}</b>\n{int(price)} руб 👉🏿 /product_{product_price_id}_{product_name_id}\n"
+            product_message += f"{display_name}<b>{discount_text}</b>\n{int(price)} руб 👉 /product_{product_price_id}_{product_name_id}\n"
             if index < len(products) - 1:
                 product_message += "- - - - - - - - - - - - - - - -\n"
 
@@ -247,7 +247,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         product_keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
         product_keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
 
-        product_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+        product_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
 
         await message.answer(product_message, reply_markup=product_keyboard, parse_mode=types.ParseMode.HTML)
 
@@ -265,7 +265,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     response_message += f"📦 {klad_type}\n👉 /product_st_{forkey}_{product_price_id}_{product_name_id}"
                     if index < len(klad_types) - 1:
                         response_message += "\n- - - - - - - - - - - - - - - -\n"
-                response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+                response_message += "\n\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
                 for klad_type, forkey in klad_types:
                     button_text = f"{klad_type} product_st_{forkey}_{product_price_id}_{product_name_id}"
@@ -300,13 +300,13 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     response_message = (f"<b>Выбран тип клада:</b>\n"
                                         f"📦 {klad_type_name}\n"
                                         f"➖➖➖➖➖➖➖➖➖➖➖\n"
-                                        f"Вы заказываете:\n"
+                                        f"<b>Вы заказываете:</b>\n"
                                         f"<b>{product_name} за {price} руб</b>\n"
                                         f"Уточните район:\n\n")
                     keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 
                     for index, (city_name, city_forkey) in enumerate(cities):
-                        response_message += f"🚩 <i>{city_name}</i>\n<b>{discount_text}</b>\n<i>Выбрать</i> 👉 /order_st_{city_forkey}_{klad_type_forkey}_{product_price_id}_{product_name_id}\n"
+                        response_message += f"🚩 <i>{city_name}</i>\n<b>{discount_text}</b>\n<i>Далее</i> 👉 /order_st_{city_forkey}_{klad_type_forkey}_{product_price_id}_{product_name_id}\n"
                         button_text = f"{city_name} order_st_{city_forkey}_{klad_type_forkey}_{product_price_id}_{product_name_id}"
                         keyboard.add(types.KeyboardButton(button_text))
 
@@ -315,7 +315,8 @@ async def register_handlers(dp: Dispatcher, bot_token):
 
                     response_message += ("\n➖➖➖➖➖➖➖➖➖➖➖\n"
                                          "Ⓜ️ Вернуться в меню\n"
-                                         "<i>Жми</i> 👉🏿 /menu")
+                                         "<i>Жми</i> 👉 /menu\n\n"
+                                         "По работе и любым вопросам обращаться к @mrsm_111")
 
                     keyboard.add(types.KeyboardButton('🏠 Меню'))
                     keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
@@ -385,9 +386,9 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                 f"<b>{product_name}</b>\n\n"
                                 f"❗️ Для продолжения заказа уточните район:\n\n"
                                 f"{districts_message}\n"
-                                f"\n➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                                f"\n➖➖➖➖➖➖➖➖➖➖➖\n"
                                 "Ⓜ️ Вернуться в меню\n"
-                                "<i>Жми</i> 👉🏿 /menu")
+                                "<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111")
 
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
@@ -439,7 +440,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                 f"{districts_message}\n"
                                 f"\n➖➖➖➖➖➖➖➖➖➖➖\n\n"
                                 "Ⓜ️ Вернуться в меню\n"
-                                "<i>Жми</i> 👉🏿 /menu")
+                                "<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111")
 
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
@@ -476,13 +477,13 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 keyboard.add(types.KeyboardButton(f"Оплата с баланса order_st_{klad_type_forkey}_35_5_{product_id}"))
 
                 if 'card' in active_payment_types:
-                    response_message += f"💰 <i>КАРТА(Ручная оплата,реквизиты у оператора )</i> 👉 /order_st_{klad_type_forkey}_10_5_{product_id}\n<b>{discount_text}</b>\n\n"
+                    response_message += f"💰 <i>Ручная оплата</i> 👉 /order_st_{klad_type_forkey}_10_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     response_message += f"💰 <i>Оплата на карту банка</i> 👉 /order_st_{klad_type_forkey}_53_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     keyboard.add(types.KeyboardButton(f"Ручная оплата order_st_{klad_type_forkey}_10_5_{product_id}"))
                     keyboard.add(
                         types.KeyboardButton(f"Оплата на карту банка order_st_{klad_type_forkey}_53_5_{product_id}"))
 
-                response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+                response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
                 keyboard.add(types.KeyboardButton('🏠 Меню'))
                 keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
                 keyboard.add(types.KeyboardButton('📦 Типы клада'))
@@ -502,46 +503,46 @@ async def register_handlers(dp: Dispatcher, bot_token):
             district_forkey = database.get_district_forkey_by_id(district_id)
             product_id = database.get_product_id_by_details(product_name_id, product_price_id, city_forkey,
                                                             klad_type_forkey, district_forkey)
-
+    
             discount = database.get_discount_by_product_name_id(product_name_id)
             discount_text = f"<b>+ скидка до {discount}%</b>" if discount > 0 else ""
-
+    
             if product_id:
                 klad_type_name = database.get_klad_type_name_by_forkey(klad_type_forkey)
                 active_payment_types = database.get_active_payment_types()
-
+    
                 response_message = (f"<b>Выбран тип клада</b>\n"
                                     f"📦 {klad_type_name}\n"
                                     f"➖➖➖➖➖➖➖➖➖➖➖\n"
                                     f"❗️ Выберите способ оплаты:\n\n")
-
+    
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
                 if 'btc' in active_payment_types:
                     response_message += f"💰 <i>Bitcoin (BTC)</i> 👉 /order_st_{klad_type_forkey}_22_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     keyboard.add(types.KeyboardButton(f"Bitcoin (BTC) order_st_{klad_type_forkey}_22_5_{product_id}"))
-
+    
                 if 'ltc' in active_payment_types:
                     response_message += f"💰 <i>Litecoin (LTC)</i> 👉 /order_st_{klad_type_forkey}_24_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     keyboard.add(types.KeyboardButton(f"Litecoin (LTC) order_st_{klad_type_forkey}_24_5_{product_id}"))
-
+    
                 response_message += f"💰 <i>Оплата с баланса</i> 👉 /order_st_{klad_type_forkey}_35_5_{product_id}\n<b>{discount_text}</b>\n\n"
                 keyboard.add(types.KeyboardButton(f"Оплата с баланса order_st_{klad_type_forkey}_35_5_{product_id}"))
-
+    
                 if 'card' in active_payment_types:
-                    response_message += f"💰 <i>КАРТА(Ручная оплата,реквизиты у оператора )</i> 👉 /order_st_{klad_type_forkey}_10_5_{product_id}\n<b>{discount_text}</b>\n\n"
+                    response_message += f"💰 <i>Ручная оплата</i> 👉 /order_st_{klad_type_forkey}_10_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     response_message += f"💰 <i>Оплата на карту банка</i> 👉 /order_st_{klad_type_forkey}_53_5_{product_id}\n<b>{discount_text}</b>\n\n"
                     keyboard.add(types.KeyboardButton(f"Ручная оплата order_st_{klad_type_forkey}_10_5_{product_id}"))
                     keyboard.add(
                         types.KeyboardButton(f"Оплата на карту банка order_st_{klad_type_forkey}_53_5_{product_id}"))
-
-                response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+    
+                response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
                 keyboard.add(types.KeyboardButton('🏠 Меню'))
                 keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
                 keyboard.add(types.KeyboardButton('📦 Типы клада'))
                 keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
                 keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
+    
                 await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
             else:
                 await message.reply("Извините, информация о данном товаре отсутствует.")
@@ -614,7 +615,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                 f"✔️ Проверить оплату\n"
                                 f"<i>Жми</i> 👉 /order_check\n\n"
                                 f"🚫 Отменить заказ\n"
-                                f"<i>Жми</i> 👉🏿 /order_cancel")
+                                f"<i>Жми</i> 👉 /order_cancel")
 
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
             keyboard.add(types.KeyboardButton("🚫 Отменить заказ"))
@@ -667,7 +668,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                             f"✔️ Проверить еще раз\n"
                             f"Жми 👉 /order_check\n\n"
                             f"🚫 Отменить заказ\n"
-                            f"Жми 👉🏿 /order_cancel")
+                            f"Жми 👉 /order_cancel")
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton('✔️ Проверить оплату'), types.KeyboardButton('🚫 Отменить заказ'))
@@ -722,7 +723,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         # Обновляем количество попыток в базе данных
         database.update_user_attempts(user_id, bot_token, user_attempts)
 
-        response_message = f"<b>❗️ Ваш заказ {order_number} отменен!</b>\n\n➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+        response_message = f"<b>❗️ Ваш заказ {order_number} отменен!</b>\n\n➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
         warning_message = f"❗️ Предупреждение!\nЗапрещено резервировать товар без оплаты более 4 раз!\nУ вас осталось {user_attempts} попыток."
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -796,16 +797,25 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 response_message = (f"<b>💰 Вы заказали</b>\n"
                                     f"{product_name} на сумму {price} руб\n"
                                     f"в районе <b>{third_district}</b>.\n"
-                                    f"До конца резерва осталось 55 минут.\n"
+                                    f"До конца резерва осталось 59 минут.\n"
                                     f"Номер заказа: {order_number}.\n"
                                     f"➖➖➖➖➖➖➖➖➖➖➖\n\n"
-                                    f"Скопируйте и напишите оператору @sparrrow_dealer\n"
-                                    f"Для получения Реквизитов -  по поводу оплат писать только на данный Юзер\n\n"
-                                    f"                                                       ВНИМАНИЕ\n"
-                                    f"ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ НАШ НОМЕР ТЕЛЕФОНА +56 9 5431 2704 , который всегда будет с нами,поэтому не забудьте добавить его в контакты.\n\n"
-                                    f"➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                                    f"Скопируйте и напишите оператору @mrsm_111  текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>!!!).Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111\n"
+                                    f"Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111 !!!!! (ВНИМАНИЕ)!!!!!\n"
+                                    f"ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ ИМЕННО ЭТОТ ЮЗЕР!!!!!!!\n"
+                                    f"<b>ОБЪЯВЛЕНИЕ!</b>\n\n"
+                                    f"Переведите на КАРТУ сумму <b>{price} руб.</b>\n"
+                                    f"В комментарии к платежу ничего указывать не нужно.\n"
+                                    f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
+                                    f"1. номер заказа <b>{order_number}</b>\n"
+                                    f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
+                                    f"3. дату и <b>ВРЕМЯ</b> платежаа так же номер с которого оплачивали\n\n"
+                                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору @mrsm_111, а не боту! Однако адрес выдаст Вам бот.\n\n"
+                                    f"➖➖➖➖➖➖➖➖➖➖➖\n"
+                                    f"✔️ Проверить оплату\n"
+                                    f"Жми 👉 /order_check\n\n"
                                     f"🚫 Отменить заказ\n"
-                                    f"Жми 👉🏿 /order_cancel")
+                                    f"Жми 👉 /order_cancel")
 
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
                 keyboard.add(types.KeyboardButton('🚫 Отменить заказ'))
@@ -846,7 +856,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 discount = database.get_discount_by_product_id(product_id)
 
                 price = int(price * (1 - discount / 100))
-
+    
                 price_fee = int(price * cf)
 
                 await state.update_data(
@@ -871,7 +881,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                     f"✔️ Проверить оплату\n"
                                     f"Жми 👉 /order_check\n\n"
                                     f"🚫 Отменить заказ\n"
-                                    f"Жми 👉🏿 /order_cancel")
+                                    f"Жми 👉 /order_cancel")
 
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
                 keyboard.add(types.KeyboardButton("🚫 Отменить заказ"))
@@ -896,7 +906,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         data = await state.get_data()
         start_time = data['start_time']
         time_passed = datetime.now() - start_time
-        time_left = timedelta(minutes=55) - time_passed
+        time_left = timedelta(minutes=59) - time_passed
 
         product_name = data['product_name']
         third_district = data['third_district']
@@ -914,14 +924,22 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                 f"До конца резерва осталось {int(time_left.total_seconds() // 60)} минут.\n"
                                 f"Номер заказа: {order_number}.\n"
                                 f"➖➖➖➖➖➖➖➖➖\n\n"
-                                f"Для уточнения актуальных реквизитов скопируйте и напишите оператору +56 9 5431 2704 (Нужно добавить в контакты!)\n"
-                                f"текст данного сообщения.\n\n"
-                                f"<b>ПЕРЕД КАЖДОЙ ОПЛАТОЙ</b> уточняйте актуальные реквизиты у оператора, во избежание потери ваших денег!\n\n"
-                                f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот.\n\n"
+                                    f"Скопируйте и напишите оператору @mrsm_111  текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>!!!).Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111\n"
+                                    f"Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111 !!!!! (ВНИМАНИЕ)!!!!!\n"
+                                    f"ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ ИМЕННО ЭТОТ ЮЗЕР!!!!!!!\n"
+                                    f"<b>ОБЪЯВЛЕНИЕ!</b>\n\n"
+                                    f"Переведите на КАРТУ сумму <b>{price_rub} руб.</b>\n"
+                                    f"В комментарии к платежу ничего указывать не нужно.\n"
+                                    f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
+                                    f"1. номер заказа <b>{order_number}</b>\n"
+                                    f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
+                                    f"3. дату и <b>ВРЕМЯ</b> платежаа так же номер с которого оплачивали\n\n"
+                                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору @mrsm_111, а не боту! Однако адрес выдаст Вам бот.\n\n"
+                                f"➖➖➖➖➖➖➖➖➖\n"
                                 f"✔️ Проверить оплату\n"
                                 f"Жми 👉 /order_check\n\n"
                                 f"🚫 Отменить заказ\n"
-                                f"Жми 👉🏿 /order_cancel")
+                                f"Жми 👉 /order_cancel")
 
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
             keyboard.add(types.KeyboardButton('✔️ Проверить оплату'), types.KeyboardButton('🚫 Отменить заказ'))
@@ -962,17 +980,25 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 response_message = (f"<b>💰 Вы заказали</b>\n"
                                     f"{product_name} на сумму {price} руб\n"
                                     f"в районе <b>{third_district}</b>.\n"
-                                    f"До конца резерва осталось 55 минут.\n"
+                                    f"До конца резерва осталось 59 минут.\n"
                                     f"Номер заказа: {order_number}.\n"
-                                    f"➖➖➖➖➖➖➖➖➖\n\n"
-                                    f"Для уточнения актуальных реквизитов скопируйте и напишите оператору +56 9 5431 2704 (Нужно добавить в контакты!)\n"
-                                    f"текст данного сообщения.\n\n"
-                                    f"<b>ПЕРЕД КАЖДОЙ ОПЛАТОЙ</b> уточняйте актуальные реквизиты у оператора, во избежание потери ваших денег!\n\n"
-                                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот.\n\n"
+                                    f"➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                                    f"Скопируйте и напишите оператору @mrsm_111  текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>!!!).Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111\n"
+                                    f"Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111 !!!!! (ВНИМАНИЕ)!!!!!\n"
+                                    f"ПОЯВИЛОСЬ ОЧЕНЬ МНОГО ФЕЙКОВЫХ АККАУНТОВ ПРОДАЮЩИХ ТОВАР ПОД НАШИМ ИМЕНЕМ, ЧТО БЫ НЕ СТАТЬ ОБМАНУТЫМ НА ДЕНЬГИ ИЛИ ПОЛУЧИТЬ ПО НАСТОЯЩЕМУ КАЧЕСТВЕННЫЙ ТОВАР, ЗАПОМНИТЕ ИМЕННО ЭТОТ ЮЗЕР!!!!!!!\n"
+                                    f"<b>ОБЪЯВЛЕНИЕ!</b>\n\n"
+                                    f"Переведите на КАРТУ сумму <b>{price_fee} руб.</b>\n"
+                                    f"В комментарии к платежу ничего указывать не нужно.\n"
+                                    f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
+                                    f"1. номер заказа <b>{order_number}</b>\n"
+                                    f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
+                                    f"3. дату и <b>ВРЕМЯ</b> платежаа так же номер с которого оплачивали\n\n"
+                                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору @mrsm_111, а не боту! Однако адрес выдаст Вам бот.\n\n"
+                                    f"➖➖➖➖➖➖➖➖➖➖➖\n"
                                     f"✔️ Проверить оплату\n"
                                     f"Жми 👉 /order_check\n\n"
                                     f"🚫 Отменить заказ\n"
-                                    f"Жми 👉🏿 /order_cancel")
+                                    f"Жми 👉 /order_cancel")
 
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
                 keyboard.add(types.KeyboardButton('🚫 Отменить заказ'))
@@ -1011,7 +1037,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                             f"✔️ Проверить оплату\n"
                             f"Жми 👉 /order_check\n\n"
                             f"🚫 Отменить заказ\n"
-                            f"Жми 👉🏿 /order_cancel")
+                            f"Жми 👉 /order_cancel")
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton('✔️ Проверить оплату'), types.KeyboardButton('🚫 Отменить заказ'))
@@ -1040,11 +1066,11 @@ async def register_handlers(dp: Dispatcher, bot_token):
 
             button_text = f"{city_name} location_{city_id}"
             locations_keyboard.add(types.KeyboardButton(button_text))
-            locations_message += f"🚩 <i>{city_name}</i><b>{discount_text}</b>\n<i>Жми</i> 👉🏿 /location_{city_id}\n"
+            locations_message += f"🚩 <i>{city_name}</i><b>{discount_text}</b>\n<b>Жми</b> 👉 /location_{city_id}\n"
             if index != len(cities) - 1:
                 locations_message += "- - - - - - - - - - - - - - - -\n"
 
-        locations_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+        locations_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
 
         locations_keyboard.add(types.KeyboardButton('🏠 Меню'))
         locations_keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
@@ -1060,15 +1086,15 @@ async def register_handlers(dp: Dispatcher, bot_token):
         if city_id_match:
             city_id = city_id_match.group(1)
             districts = database.get_districts_by_city_id(city_id)
-
+    
             if not districts:
                 await message.reply("Извините, на данный момент районы в этом городе отсутствуют.")
                 return
-
+    
             city_name = database.get_city_name(city_id)
             response_message = f"<b>{city_name}</b>\nВыберите район:\n\n"
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
             seen_districts = set()
             district_info = []
             for district_id, district_name in districts:
@@ -1076,27 +1102,27 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 if first_district not in seen_districts:
                     seen_districts.add(first_district)
                     district_info.append((district_id, first_district))
-
+    
             for index, (district_id, first_district) in enumerate(district_info):
                 discount = database.get_maximum_discount_by_district_id(district_id)
                 discount_text = f" + скидка до {discount}%" if discount > 0 else ""
                 button_text = f"{first_district} location_{district_id}_{city_id}"
                 keyboard.add(types.KeyboardButton(button_text))
                 response_message += f"🏘 <i>{first_district}</i>\n<b>{discount_text}</b>\n<i>Выбрать</i> 👉 /location_{district_id}_{city_id}\n"
-
+    
                 if index < len(district_info) - 1:
                     response_message += "- - - - - - - - - - - - - - - -\n"
-
+    
             keyboard.add(types.KeyboardButton('🏠 Меню'))
             keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
             keyboard.add(types.KeyboardButton('📦 Типы клада'))
             keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
             keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
-            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
-
+    
+            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
+    
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
-
+    
     @dp.message_handler(lambda message: re.match(r'^.*location_(\d+)_(\d+)$', message.text))
     async def show_third_district_selection(message: types.Message, state: FSMContext):
         match = re.match(r'^.*location_(\d+)_(\d+)$', message.text)
@@ -1104,22 +1130,22 @@ async def register_handlers(dp: Dispatcher, bot_token):
             first_district_id, city_id = match.groups()
             unique_third_districts = database.get_third_districts_by_first_district_id_and_city_id(first_district_id,
                                                                                                    city_id)
-
+    
             if not unique_third_districts:
                 await message.reply("Извините, на данный момент дополнительные районы в этом городе отсутствуют.")
                 return
-
+    
             city_name = database.get_city_name(city_id)
             response_message = f"<b>{city_name}</b>\nВыберите район:\n\n"
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
             sorted_unique_third_districts = sorted(unique_third_districts, key=lambda x: x[1])
             count_districts = len(sorted_unique_third_districts)
-
+    
             for index, (third_district_id, third_district_name) in enumerate(sorted_unique_third_districts):
                 discount = database.get_maximum_discount_by_district_id(third_district_id)
                 discount_text = f" + скидка до {discount}%" if discount > 0 else ""
-
+    
                 if third_district_name.lower() == "none":  # Проверяем, равен ли район "None"
                     klad_types = database.get_available_klad_types_by_city_and_district(city_id, third_district_id)
                     for klad_type_forkey, klad_type_name in klad_types:
@@ -1130,18 +1156,18 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     button_text = f"{third_district_name} location_7_{third_district_id}_{city_id}"
                     keyboard.add(types.KeyboardButton(button_text))
                     response_message += f"🏘 <i>{third_district_name}</i>\n<b>{discount_text}</b>\n<i>Выбрать</i> 👉 /location_7_{third_district_id}_{city_id}\n"
-
+    
                 if index != count_districts - 1:
                     response_message += "- - - - - - - - - - - - - - - -\n"
-
+    
             keyboard.add(types.KeyboardButton('🏠 Меню'))
             keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
             keyboard.add(types.KeyboardButton('📦 Типы клада'))
             keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
             keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
-            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
-
+    
+            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
+    
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
     @dp.message_handler(lambda message: re.search(r'location_7_(\d+)_(\d+)', message.text.strip()))
@@ -1150,30 +1176,30 @@ async def register_handlers(dp: Dispatcher, bot_token):
         if match:
             district_id, city_id = match.groups()
             klad_types = database.get_available_klad_types_by_city_and_district(city_id, district_id)
-
+    
             if not klad_types:
                 await message.reply("Извините, на данный момент типы клада в этом районе и городе отсутствуют.")
                 return
-
+    
             response_message = "<b>Выберите тип клада</b>\n\n"
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
             for index, (klad_type_forkey, klad_type_name) in enumerate(klad_types):
                 button_text = f"{klad_type_name} location_st_{klad_type_forkey}_{district_id}_{city_id}"
                 keyboard.add(types.KeyboardButton(button_text))
                 response_message += f"📦 {klad_type_name}\n👉 /location_st_{klad_type_forkey}_{district_id}_{city_id}\n"
-
+    
                 if index != len(klad_types) - 1:
                     response_message += "- - - - - - - - - - - - - - - -\n"
-
+    
             keyboard.add(types.KeyboardButton('🏠 Меню'))
             keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
             keyboard.add(types.KeyboardButton('📦 Типы клада'))
             keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
             keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
-            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
-
+    
+            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
+    
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
     @dp.message_handler(lambda message: re.search(r'location_st_([a-z0-9]{8})_(\d+)_(\d+)$', message.text.strip()))
@@ -1197,7 +1223,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     "Извините, на данный момент товары этого типа в указанном районе и городе отсутствуют.")
                 return
 
-            response_message = f"<b>Выбран тип клада:</b> 📦 {klad_type_name}\n➖➖➖➖➖➖➖➖➖➖➖\n<b>Выберите товар</b>\nв районе {city_name}\n\n"
+            response_message = f"<b>Выбран тип клада:</b> 📦 {klad_type_name}\n➖➖➖➖➖➖➖➖➖➖➖\n<b>{city_name}</b>\nДоступные товары:\n\n"
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 
             for index, (product_id, product_name, product_price) in enumerate(products):
@@ -1219,20 +1245,20 @@ async def register_handlers(dp: Dispatcher, bot_token):
             keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
             keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
 
-            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
 
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
-
+        
     @dp.message_handler(lambda message: message.text in ["📦 Типы клада", "/storage_types"])
     async def show_storage_types(message: types.Message):
         klad_types = database.get_av_klad_types()
         if not klad_types:
             await message.reply("Извините, доступные типы клада не найдены.")
             return
-
+    
         response_message = "<b>Выберите тип клада</b>\n\n"
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
         for index, klad_type in enumerate(klad_types):
             klad_type_name, klad_type_forkey = klad_type
             command_text = f"storage_type_{klad_type_forkey}"
@@ -1240,54 +1266,54 @@ async def register_handlers(dp: Dispatcher, bot_token):
             if index != len(klad_types) - 1:
                 response_message += "- - - - - - - - - - - - - - - -\n"
             keyboard.add(types.KeyboardButton(f"{klad_type_name} {command_text}"))
-
+    
         keyboard.add(types.KeyboardButton('🏠 Меню'))
         keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
         keyboard.add(types.KeyboardButton('📦 Типы клада'))
         keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
         keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
-        response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
-
+    
+        response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
+    
         await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
     @dp.message_handler(lambda message: re.match('.*storage_type_([a-z0-9]{8})$', message.text))
     async def show_cities_by_storage_type(message: types.Message):
         storage_type_forkey = message.text.split('_')[-1]
         storage_type_name = database.get_klad_type_name_by_forkey(storage_type_forkey)
-
+    
         cities = database.get_cities_by_klad_type(storage_type_forkey)
-
+    
         if not cities:
             await message.reply("Извините, города для выбранного типа клада отсутствуют.")
             return
-
+    
         response_message = (f"<b>Выбран тип клада:</b>\n"
                             f"📦 {storage_type_name}\n"
                             "➖➖➖➖➖➖➖➖➖➖➖\n"
                             "<b>Выберите город</b>\n\n")
-
+    
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         for index, (city_id, city_name) in enumerate(cities):
-
+    
             discount = database.get_maximum_discount_by_city_id(city_id)
             discount_text = f" + скидка до {discount}%" if discount > 0 else ""
-
+    
             button_text = f"{city_name} location_st_1_{storage_type_forkey}_{city_id}"
             keyboard.add(types.KeyboardButton(button_text))
             response_message += (f"🚩 <i>{city_name}</i>\n<b>{discount_text}</b>\n"
                                  f"<i>Далее</i> 👉 /location_st_1_{storage_type_forkey}_{city_id}\n")
             if index < len(cities) - 1:
                 response_message += "- - - - - - - - - - - - - - - -\n"
-
-        response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
-
+    
+        response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
+    
         keyboard.add(types.KeyboardButton('🏠 Меню'))
         keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
         keyboard.add(types.KeyboardButton('📦 Типы клада'))
         keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
         keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
+    
         await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
 
     @dp.message_handler(lambda message: re.match(r'.*location_st_1_([a-z0-9]{8})_(\d+)', message.text))
@@ -1298,66 +1324,65 @@ async def register_handlers(dp: Dispatcher, bot_token):
             klad_type = database.get_klad_type_name_by_forkey(storage_type_forkey)
             city_name = database.get_city_name(city_id)
             districts = database.get_districts_by_city_and_klad_type(city_id, storage_type_forkey)
-
+    
             if not districts:
                 await message.reply("Извините, районы для выбранного типа клада отсутствуют.")
                 return
-
+    
             district_dict = {}
             for district_id, district_name in districts:
                 district_parts = district_name.split(':')
                 first_district = district_parts[0]
                 third_district = district_parts[2] if len(district_parts) > 2 else None
-
+    
                 if third_district and third_district.lower() == "none":
                     button_text = f"location_st_{storage_type_forkey}_{district_id}_{city_id}"
                     key = (first_district, "none")  # Обработка случаев, когда третий район отсутствует
                 else:
                     button_text = f"location_735_{storage_type_forkey}_{district_id}_{city_id}"
                     key = (first_district, "735")  # Случаи с третьим районом и разной командой
-
+    
                 current_discount = database.get_maximum_discount_by_district_id(district_id)
                 if key not in district_dict or district_dict[key][1] < current_discount:
                     district_dict[key] = (district_id, current_discount, button_text, district_name)
-
+    
             response_message = f"<b>Выбран тип клада:</b>\n📦 {klad_type}\n➖➖➖➖➖➖➖➖➖➖➖\n<b>{city_name}</b>\nВыберите район:\n\n"
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
             district_list = list(district_dict.items())
-            for index, ((first_district, _), (district_id, discount, button_text, district_name)) in enumerate(
-                    district_list):
+            for index, ((first_district, _), (district_id, discount, button_text, district_name)) in enumerate(district_list):
                 discount_text = f" + скидка до {discount}%" if discount > 0 else ""
                 keyboard.add(types.KeyboardButton(f"{first_district} {button_text}"))
                 response_message += f"🚩 {first_district}\n<b>{discount_text}</b>\n👉 /{button_text}\n"
                 if index < len(district_list) - 1:
                     response_message += "- - - - - - - - - - - - - - - -\n"
-
-            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+    
+            response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
             keyboard.add(types.KeyboardButton('🏠 Меню'))
             keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
             keyboard.add(types.KeyboardButton('📦 Типы клада'))
             keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
             keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
+    
             await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
-
+        
     @dp.message_handler(lambda message: re.match(r'.*location_735_([a-z0-9]{8})_(\d+)_(\d+)$', message.text))
     async def handle_third_district_selection(message: types.Message):
         match = re.search(r'location_735_([a-z0-9]{8})_(\d+)_(\d+)$', message.text)
         if match:
             forkey, district_id, city_id = match.groups()
-
+    
             klad_type_name = database.get_klad_type_name_by_forkey(forkey)
             city_name = database.get_city_name(city_id)
             third_districts = database.get_third_districts_by_first_district_id_and_city_id_and_klad_type(district_id,
                                                                                                           city_id,
                                                                                                           forkey)
-
+    
             if third_districts:
                 response_message = (f"<b>Выбран тип клада:</b> 📦 {klad_type_name}\n"
                                     f"➖➖➖➖➖➖➖➖➖➖➖\n"
                                     f"<b>{city_name}</b> \nУточните район:\n\n")
                 keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-
+    
                 for index, (third_district_id, third_district_name) in enumerate(third_districts):
                     if third_district_name.lower() != "none":  # Пропускаем районы с названием "none"
                         discount = database.get_maximum_discount_by_district_id(third_district_id)
@@ -1367,14 +1392,14 @@ async def register_handlers(dp: Dispatcher, bot_token):
                         response_message += f"🚩 <i>{third_district_name}</i>\n<b>{discount_text}</b>\n <i>Далее</i> 👉 /location_st_{forkey}_{third_district_id}_{city_id}\n"
                         if index < len(third_districts) - 1:
                             response_message += "- - - - - - - - - - - - - - - -\n"
-
-                response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+    
+                response_message += "\n➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu\n\nПо работе и любым вопросам обращаться к @mrsm_111"
                 keyboard.add(types.KeyboardButton('🏠 Меню'))
                 keyboard.add(types.KeyboardButton('📦 Все продукты'), types.KeyboardButton('👉 Локации'))
                 keyboard.add(types.KeyboardButton('📦 Типы клада'))
                 keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
                 keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
+    
                 await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
             else:
                 await message.reply("Извините, дополнительные районы в этом городе отсутствуют.")
@@ -1400,7 +1425,8 @@ async def register_handlers(dp: Dispatcher, bot_token):
                                     "у нас нет информации о Вашем последнем заказе.\n"
                                     "➖➖➖➖➖➖➖➖\n"
                                     "Ⓜ️ Вернуться в меню\n"
-                                    "<i>Жми</i> 👉🏿 /menu")
+                                    "<i>Жми</i> 👉 /menu\n\n"
+                                    "По работе и любым вопросам обращаться к @mrsm_111")
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton('🏠 Меню'))
@@ -1483,7 +1509,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     else:
                         response_message += f"{info}\n\n"
 
-            response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉🏿 /menu"
+            response_message += "➖➖➖➖➖➖➖➖➖➖➖\nⓂ️ Вернуться в меню\n<i>Жми</i> 👉 /menu"
 
             # Создаём клавиатуру
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -1498,36 +1524,36 @@ async def register_handlers(dp: Dispatcher, bot_token):
     @dp.message_handler(lambda message: re.match(r'.*up_balance(\d+)_(22|24)', message.text), state=None)
     async def crypto_payment(message: types.Message, state: FSMContext):
         await OrderState.waiting_for_payment_balance.set()
-
+    
         match = re.match(r'.*up_balance(\d+)_(22|24)', message.text)
         rub_amount, payment_method = match.groups()
-
+    
         crypto_type = None
         crypto_price = 0
-
+    
         if payment_method == "22":
             crypto_type = "BTC"
             crypto_price = btc_price  # Здесь должен быть ваш метод для получения цены BTC
         elif payment_method == "24":
             crypto_type = "LTC"
             crypto_price = ltc_price  # Здесь должен быть ваш метод для получения цены LTC
-
+    
         if not crypto_type:
             await message.answer("Произошла ошибка при определении метода платежа.")
             await state.finish()
             return
-
+    
         cf = database.get_payment_coefficient(crypto_type.lower())  # Получаем коэффициент для крипто-валюты
-
+    
         crypto_details = database.get_payment_details(crypto_type.lower())
         crypto_addresses = crypto_details.split('\n')
         crypto_address = random.choice(crypto_addresses) if crypto_addresses else f"{crypto_type} адрес не найден"
-
+    
         price_crypto = round(int(rub_amount) / crypto_price * cf, 8)  # Умножаем сумму криптовалюты на коэффициент
-
+    
         order_number = database.get_and_increment_purchases_count()
         start_time = datetime.now()
-
+    
         await state.update_data(
             order_number=order_number,
             crypto_type=crypto_type,
@@ -1536,7 +1562,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
             price_crypto=price_crypto,
             start_time=start_time
         )
-
+    
         response_message = (f"💰 Вы сформировали заявку на пополнение баланса на сумму {rub_amount} руб.\n"
                             f"До конца резерва осталось 59 минут.\n"
                             f"Номер заказа: {order_number}.\n"
@@ -1548,8 +1574,8 @@ async def register_handlers(dp: Dispatcher, bot_token):
                             f"✔️ Проверить оплату\n"
                             f"Жми 👉 /order_check\n\n"
                             f"🚫 Отменить заказ\n"
-                            f"Жми 👉🏿 /order_cancel")
-
+                            f"Жми 👉 /order_cancel")
+    
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton("🚫 Отменить заказ"))
         keyboard.add(types.KeyboardButton('🏠 Меню'))
@@ -1557,7 +1583,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         keyboard.add(types.KeyboardButton('📦 Типы клада'))
         keyboard.add(types.KeyboardButton('💰 Мой последний заказ'), types.KeyboardButton('❓ Помощь'))
         keyboard.add(types.KeyboardButton('💰 Баланс'), types.KeyboardButton('💰 Пополнить баланс'))
-
+    
         await message.answer("Подождите... Ваш запрос обрабатывается...")
         await asyncio.sleep(1)
         await message.answer(response_message, reply_markup=keyboard, parse_mode="HTML")
@@ -1596,7 +1622,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 "✔️ Проверить оплату\n"
                 "Жми 👉 /order_check\n\n"
                 "🚫 Отменить заказ\n"
-                "Жми 👉🏿 /order_cancel"
+                "Жми 👉 /order_cancel"
             )
 
             keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -1629,17 +1655,24 @@ async def register_handlers(dp: Dispatcher, bot_token):
 
         response_message = (
             f"💰 Вы сформировали заявку на пополнение баланса на сумму {rub_amount_fee} руб.\n"
-            "До конца резерва осталось 55 минут.\n"
+            "До конца резерва осталось 59 минут.\n"
             f"Номер заказа: {order_number}.\n\n"
-            f"➖➖➖➖➖➖➖➖➖\n\n"
-            f"Для уточнения актуальных реквизитов скопируйте и напишите оператору +56 9 5431 2704 (Нужно добавить в контакты!)\n"
-            f"текст данного сообщения.\n\n"
-            f"<b>ПЕРЕД КАЖДОЙ ОПЛАТОЙ</b> уточняйте актуальные реквизиты у оператора, во избежание потери ваших денег!\n\n"
-            f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот.\n\n"
-            f"✔️ Проверить оплату\n"
-            f"Жми 👉 /order_check\n\n"
-            f"🚫 Отменить заказ\n"
-            f"Жми 👉🏿 /order_cancel")
+            "➖➖➖➖➖➖➖➖➖\n"
+            "Скопируйте и напишите оператору @mrsm_111 текст данного сообщения для уточнения НОМЕРА КАРТЫ !!!).\n"
+            "ВНИМАНИЕ! перед каждой оплатой уточняйте карту у оператора @mrsm_111, во избежание потери ваших денег!\n\n"
+            f"Переведите на КАРТУ сумму {rub_amount_fee} руб.\n"
+            "В комментарии к платежу ничего указывать не нужно.\n"
+            "Внимание! После оплаты сообщите оператору:\n"
+            f"1. номер заказа {order_number}\n"
+            "2. ОПЛАЧЕННУЮ СУММУ\n"
+            "3. дату и ВРЕМЯ платежа, а так же номер с которого оплачивали\n\n"
+            "Внимание! Сообщать об оплате нужно именно оператору @mrsm_111, а не боту! Однако адрес выдаст Вам бот.\n\n\n"
+            "➖➖➖➖➖➖➖➖➖\n"
+            "✔️ Проверить оплату\n"
+            "<i>Жми</i> 👉 /order_check\n\n"
+            "🚫 Отменить заказ\n"
+            "<i>Жми</i> 👉 /order_cancel"
+        )
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton("🚫 Отменить заказ"))
@@ -1658,7 +1691,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         data = await state.get_data()
         start_time = data['start_time']
         time_passed = datetime.now() - start_time
-        time_left = timedelta(minutes=55) - time_passed
+        time_left = timedelta(minutes=59) - time_passed
         minutes_left = max(int(time_left.total_seconds() // 60), 0)
 
         order_number = data['order_number']
@@ -1671,15 +1704,22 @@ async def register_handlers(dp: Dispatcher, bot_token):
             f"что вы сформировали заявку на пополнение баланса на сумму {rub_amount} руб.\n"
             f"Номер заказа: {order_number}.\n"
             f"До конца резерва осталось {minutes_left} минут.\n\n"
-            f"➖➖➖➖➖➖➖➖➖\n\n"
-            f"Для уточнения актуальных реквизитов скопируйте и напишите оператору +56 9 5431 2704 (Нужно добавить в контакты!)\n"
-            f"текст данного сообщения.\n\n"
-            f"<b>ПЕРЕД КАЖДОЙ ОПЛАТОЙ</b> уточняйте актуальные реквизиты у оператора, во избежание потери ваших денег!\n\n"
-            f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот.\n\n"
-            f"✔️ Проверить оплату\n"
-            f"Жми 👉 /order_check\n\n"
-            f"🚫 Отменить заказ\n"
-            f"Жми 👉🏿 /order_cancel")
+            "➖➖➖➖➖➖➖➖➖\n"
+            "Скопируйте и напишите оператору @mrsm_111 текст данного сообщения для уточнения НОМЕРА КАРТЫ !!!).\n"
+            "ВНИМАНИЕ! перед каждой оплатой уточняйте карту у оператора @mrsm_111, во избежание потери ваших денег!\n\n"
+            f"Переведите на КАРТУ сумму {rub_amount_fee} руб.\n"
+            "В комментарии к платежу ничего указывать не нужно.\n"
+            "Внимание! После оплаты сообщите оператору:\n"
+            f"1. номер заказа {order_number}\n"
+            "2. ОПЛАЧЕННУЮ СУММУ\n"
+            "3. дату и ВРЕМЯ платежа, а так же номер с которого оплачивали\n\n"
+            "Внимание! Сообщать об оплате нужно именно оператору @mrsm_111, а не боту! Однако адрес выдаст Вам бот.\n"
+            "➖➖➖➖➖➖➖➖➖\n\n"
+            "✔️ Проверить оплату\n"
+            "<i>Жми</i> 👉 /order_check\n\n"
+            "🚫 Отменить заказ\n"
+            "<i>Жми</i> 👉 /order_cancel"
+        )
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         keyboard.add(types.KeyboardButton("✔️ Проверить оплату"), types.KeyboardButton("🚫 Отменить заказ"))
@@ -1725,7 +1765,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
             "✔️ Проверить оплату\n"
             "Жми 👉 /order_check\n\n"
             "🚫 Отменить заказ\n"
-            "Жми 👉🏿 /order_cancel"
+            "Жми 👉 /order_cancel"
         )
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -1765,7 +1805,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
             "✔️ Проверить оплату\n"
             "Жми 👉 /order_check\n\n"
             "🚫 Отменить заказ\n"
-            "Жми 👉🏿 /order_cancel"
+            "Жми 👉 /order_cancel"
         )
 
         keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
@@ -1783,14 +1823,14 @@ async def register_handlers(dp: Dispatcher, bot_token):
         for i in range(reminders):
             await asyncio.sleep(delay)
             data = await state.get_data()
-
+    
             start_time = data['start_time']
             time_passed = datetime.now() - start_time
-            time_left = timedelta(minutes=55) - time_passed
-
+            time_left = timedelta(minutes=59) - time_passed
+    
             if time_left.total_seconds() <= 0:
                 break
-
+    
             response_message = (
                 f"<b>❗️ Напоминаем,</b>\n"
                 f"что за Вами зарезервирован\n"
@@ -1804,40 +1844,40 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 f"<b>{data['crypto_address']}</b>\n"
                 f"сумму <b>{data['price_crypto']} {data['crypto_type']}</b>"
             )
-
+    
             if time_left.total_seconds() > 0:
                 await message.answer(response_message, parse_mode=types.ParseMode.HTML)
-
+    
         new_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         new_keyboard.add(KeyboardButton('🏠 Меню'))
         new_keyboard.row(KeyboardButton('📦 Все продукты'), KeyboardButton('👉 Локации'))
         new_keyboard.add(KeyboardButton('📦 Типы клада'))
         new_keyboard.row(KeyboardButton('💰 Мой последний заказ'), KeyboardButton('❓ Помощь'))
         new_keyboard.row(KeyboardButton('💰 Баланс'), KeyboardButton('💰 Пополнить баланс'))
-
+    
         await message.answer(
             f"<b>❗️ Оплата не поступила</b>\n"
             f"Заказ {order_number} отменен!\n\n"
             f"Ⓜ️ Вернуться в меню\n"
-            f"Жми 👉🏿 /menu",
+            f"Жми 👉 /menu",
             reply_markup=new_keyboard,
             parse_mode=types.ParseMode.HTML
         )
         await state.finish()
-
+    
     async def start_order_timer2(message: types.Message, state: FSMContext, order_number: str, payment_method: str,
                                  delay: int = 10 * 60, reminders: int = 4):
         for i in range(reminders):
             await asyncio.sleep(delay)
             data = await state.get_data()
-
+    
             start_time = data['start_time']
             time_passed = datetime.now() - start_time
-            time_left = timedelta(minutes=55) - time_passed
-
+            time_left = timedelta(minutes=25) - time_passed
+    
             if time_left.total_seconds() <= 0:
                 break
-
+    
             if payment_method == "hand_payment":
                 response_message = (
                     f"<b>❗️ Напоминаем,</b>\n"
@@ -1846,16 +1886,17 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     f"в районе <b>{data['third_district']}</b>.\n"
                     f"Номер заказа: <b>{order_number}</b>.\n"
                     f"До конца резерва осталось {max(int(time_left.total_seconds() // 60), 0)} минут.\n\n"
-                    f"➖➖➖➖➖➖➖➖➖\n\n"
-                    f"Для уточнения актуальных реквизитов скопируйте и напишите оператору +56 9 5431 2704 (Нужно добавить в контакты!)\n"
-                    f"текст данного сообщения.\n\n"
-                    f"<b>ПЕРЕД КАЖДОЙ ОПЛАТОЙ</b> уточняйте актуальные реквизиты у оператора, во избежание потери ваших денег!\n\n"
-                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот.\n\n"
-                    f"✔️ Проверить оплату\n"
-                    f"Жми 👉 /order_check\n\n"
-                    f"🚫 Отменить заказ\n"
-                    f"Жми 👉🏿 /order_cancel")
-
+                    f"➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                    f"Скопируйте и напишите оператору @mrsm_111 текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>.\n"
+                    f"<b>ВНИМАНИЕ!</b> перед каждой оплатой уточняйте <b>НОМЕР КАРТЫ</b> у оператора, во избежание потери ваших денег!\n\n"
+                    f"Переведите на КАРТУ сумму <b>{data['price_rub']} руб.</b>\n"
+                    f"В комментарии к платежу ничего указывать не нужно.\n"
+                    f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
+                    f"1. номер заказа <b>{order_number}</b>\n"
+                    f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
+                    f"3. дату и ВРЕМЯ платежа а так же номер кошелька с которого оплачивали\n\n"
+                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот."
+                )
             elif payment_method == "card":
                 card_details = data['payment_details']
                 response_message = (
@@ -1873,29 +1914,28 @@ async def register_handlers(dp: Dispatcher, bot_token):
                     f"✔️ Проверить оплату\n"
                     f"Жми 👉 /order_check\n\n"
                     f"🚫 Отменить заказ\n"
-                    f"Жми 👉🏿 /order_cancel"
+                    f"Жми 👉 /order_cancel"
                 )
-
+    
             if time_left.total_seconds() > 0:
                 await message.answer(response_message, parse_mode=types.ParseMode.HTML)
-
+    
         new_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
         new_keyboard.add(KeyboardButton('🏠 Меню'))
         new_keyboard.row(KeyboardButton('📦 Все продукты'), KeyboardButton('👉 Локации'))
         new_keyboard.add(KeyboardButton('📦 Типы клада'))
         new_keyboard.row(KeyboardButton('💰 Мой последний заказ'), KeyboardButton('❓ Помощь'))
         new_keyboard.row(KeyboardButton('💰 Баланс'), KeyboardButton('💰 Пополнить баланс'))
-
+    
         await message.answer(
             f"<b>❗️ Оплата не поступила</b>\n"
             f"Заказ {order_number} отменен!\n\n"
             f"Ⓜ️ Вернуться в меню\n"
-            f"Жми 👉🏿 /menu",
+            f"Жми 👉 /menu",
             reply_markup=new_keyboard,
             parse_mode=types.ParseMode.HTML
         )
         await state.finish()
-
 
 def convert(value):
     if value is None:
