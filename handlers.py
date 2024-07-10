@@ -797,7 +797,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 response_message = (f"<b>💰 Вы заказали</b>\n"
                                     f"{product_name} на сумму {price} руб\n"
                                     f"в районе <b>{third_district}</b>.\n"
-                                    f"До конца резерва осталось 59 минут.\n"
+                                    f"До конца резерва осталось 35 минут.\n"
                                     f"Номер заказа: {order_number}.\n"
                                     f"➖➖➖➖➖➖➖➖➖➖➖\n\n"
                                     f"Скопируйте и напишите оператору @mrsm_111  текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>!!!).Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111\n"
@@ -828,7 +828,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 await message.answer("Подождите... Ваш запрос обрабатывается...")
                 await asyncio.sleep(1)  # Имитация задержки обработки
                 await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
-                await start_order_timer2(message, state, order_number, "hand_payment")
+                await start_order_timer_hand_payment(message, state, order_number)
             else:
                 await message.answer("Информация о товаре не найдена.")
                 await state.finish()
@@ -894,7 +894,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 await message.answer("Подождите... Ваш запрос обрабатывается...")
                 await asyncio.sleep(1)  # Имитация задержки обработки
                 await message.answer(response_message, reply_markup=keyboard, parse_mode=types.ParseMode.HTML)
-                await start_order_timer2(message, state, order_number, "card")
+                await start_order_timer_card_payment(message, state, order_number)
             else:
                 await message.answer("Информация о товаре не найдена.")
                 await state.finish()
@@ -906,7 +906,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
         data = await state.get_data()
         start_time = data['start_time']
         time_passed = datetime.now() - start_time
-        time_left = timedelta(minutes=59) - time_passed
+        time_left = timedelta(minutes=34) - time_passed
 
         product_name = data['product_name']
         third_district = data['third_district']
@@ -980,7 +980,7 @@ async def register_handlers(dp: Dispatcher, bot_token):
                 response_message = (f"<b>💰 Вы заказали</b>\n"
                                     f"{product_name} на сумму {price} руб\n"
                                     f"в районе <b>{third_district}</b>.\n"
-                                    f"До конца резерва осталось 59 минут.\n"
+                                    f"До конца резерва осталось 34 минут.\n"
                                     f"Номер заказа: {order_number}.\n"
                                     f"➖➖➖➖➖➖➖➖➖➖➖\n\n"
                                     f"Скопируйте и напишите оператору @mrsm_111  текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>!!!).Для получения Реквизитов -  по поводу оплат писать на данный Юзер @mrsm_111\n"
@@ -1865,8 +1865,58 @@ async def register_handlers(dp: Dispatcher, bot_token):
         )
         await state.finish()
     
-    async def start_order_timer2(message: types.Message, state: FSMContext, order_number: str, payment_method: str,
-                                 delay: int = 10 * 60, reminders: int = 4):
+    async def start_order_timer_hand_payment(message: types.Message, state: FSMContext, order_number: str, delay: int = 10 * 60, reminders: int = 3):
+        for i in range(reminders):
+            await asyncio.sleep(delay)
+            data = await state.get_data()
+    
+            start_time = data['start_time']
+            time_passed = datetime.now() - start_time
+            time_left = timedelta(minutes=35) - time_passed
+    
+            if time_left.total_seconds() <= 0:
+                break
+    
+            response_message = (
+                f"<b>❗️ Напоминаем,</b>\n"
+                f"что за Вами зарезервирован\n"
+                f"<b>{data['product_name']}</b> на сумму {data['price_rub']} руб\n"
+                f"в районе <b>{data['third_district']}</b>.\n"
+                f"Номер заказа: <b>{order_number}</b>.\n"
+                f"До конца резерва осталось {max(int(time_left.total_seconds() // 60), 0)} минут.\n\n"
+                f"➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                f"Скопируйте и напишите оператору @mrsm_111 текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>.\n"
+                f"<b>ВНИМАНИЕ!</b> перед каждой оплатой уточняйте <b>НОМЕР КАРТЫ</b> у оператора, во избежание потери ваших денег!\n\n"
+                f"Переведите на КАРТУ сумму <b>{data['price_rub']} руб.</b>\n"
+                f"В комментарии к платежу ничего указывать не нужно.\n"
+                f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
+                f"1. номер заказа <b>{order_number}</b>\n"
+                f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
+                f"3. дату и ВРЕМЯ платежа а так же номер кошелька с которого оплачивали\n\n"
+                f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот."
+            )
+    
+            if time_left.total_seconds() > 0:
+                await message.answer(response_message, parse_mode=types.ParseMode.HTML)
+    
+        new_keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
+        new_keyboard.add(KeyboardButton('🏠 Меню'))
+        new_keyboard.row(KeyboardButton('📦 Все продукты'), KeyboardButton('👉 Локации'))
+        new_keyboard.add(KeyboardButton('📦 Типы клада'))
+        new_keyboard.row(KeyboardButton('💰 Мой последний заказ'), KeyboardButton('❓ Помощь'))
+        new_keyboard.row(KeyboardButton('💰 Баланс'), KeyboardButton('💰 Пополнить баланс'))
+    
+        await message.answer(
+            f"<b>❗️ Оплата не поступила</b>\n"
+            f"Заказ {order_number} отменен!\n\n"
+            f"Ⓜ️ Вернуться в меню\n"
+            f"Жми 👉 /menu",
+            reply_markup=new_keyboard,
+            parse_mode=types.ParseMode.HTML
+        )
+        await state.finish()
+    
+    async def start_order_timer_card_payment(message: types.Message, state: FSMContext, order_number: str, delay: int = 10 * 60, reminders: int = 2):
         for i in range(reminders):
             await asyncio.sleep(delay)
             data = await state.get_data()
@@ -1878,44 +1928,24 @@ async def register_handlers(dp: Dispatcher, bot_token):
             if time_left.total_seconds() <= 0:
                 break
     
-            if payment_method == "hand_payment":
-                response_message = (
-                    f"<b>❗️ Напоминаем,</b>\n"
-                    f"что за Вами зарезервирован\n"
-                    f"<b>{data['product_name']}</b> на сумму {data['price_rub']} руб\n"
-                    f"в районе <b>{data['third_district']}</b>.\n"
-                    f"Номер заказа: <b>{order_number}</b>.\n"
-                    f"До конца резерва осталось {max(int(time_left.total_seconds() // 60), 0)} минут.\n\n"
-                    f"➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
-                    f"Скопируйте и напишите оператору @mrsm_111 текст данного сообщения для уточнения <b>НОМЕРА КАРТЫ</b>.\n"
-                    f"<b>ВНИМАНИЕ!</b> перед каждой оплатой уточняйте <b>НОМЕР КАРТЫ</b> у оператора, во избежание потери ваших денег!\n\n"
-                    f"Переведите на КАРТУ сумму <b>{data['price_rub']} руб.</b>\n"
-                    f"В комментарии к платежу ничего указывать не нужно.\n"
-                    f"<b>Внимание!</b> После оплаты сообщите оператору:\n"
-                    f"1. номер заказа <b>{order_number}</b>\n"
-                    f"2. <b>ОПЛАЧЕННУЮ СУММУ</b>\n"
-                    f"3. дату и ВРЕМЯ платежа а так же номер кошелька с которого оплачивали\n\n"
-                    f"<b>Внимание!</b> Сообщать об оплате нужно именно оператору, а не боту! Однако адрес выдаст Вам бот."
-                )
-            elif payment_method == "card":
-                card_details = data['payment_details']
-                response_message = (
-                    f"<b>❗️ Напоминаем,</b>\n"
-                    f"что за Вами зарезервирован\n"
-                    f"<b>{data['product_name']}</b> на сумму {data['price_rub']} руб\n"
-                    f"в районе <b>{data['third_district']}</b>.\n"
-                    f"Номер заказа: {order_number}.\n"
-                    f"До конца резерва осталось {max(int(time_left.total_seconds() // 60), 0)} минут.\n\n"
-                    f"➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
-                    f"Переведите на карту\n"
-                    f"{card_details}\n"
-                    f"точную сумму одной транзакцией {data['price_rub']} руб.\n\n"
-                    f"➖➖➖➖➖➖➖➖➖➖➖➖\n"
-                    f"✔️ Проверить оплату\n"
-                    f"Жми 👉 /order_check\n\n"
-                    f"🚫 Отменить заказ\n"
-                    f"Жми 👉 /order_cancel"
-                )
+            card_details = data['payment_details']
+            response_message = (
+                f"<b>❗️ Напоминаем,</b>\n"
+                f"что за Вами зарезервирован\n"
+                f"<b>{data['product_name']}</b> на сумму {data['price_rub']} руб\n"
+                f"в районе <b>{data['third_district']}</b>.\n"
+                f"Номер заказа: {order_number}.\n"
+                f"До конца резерва осталось {max(int(time_left.total_seconds() // 60), 0)} минут.\n\n"
+                f"➖➖➖➖➖➖➖➖➖➖➖➖\n\n"
+                f"Переведите на карту\n"
+                f"{card_details}\n"
+                f"точную сумму одной транзакцией {data['price_rub']} руб.\n\n"
+                f"➖➖➖➖➖➖➖➖➖➖➖➖\n"
+                f"✔️ Проверить оплату\n"
+                f"Жми 👉 /order_check\n\n"
+                f"🚫 Отменить заказ\n"
+                f"Жми 👉 /order_cancel"
+            )
     
             if time_left.total_seconds() > 0:
                 await message.answer(response_message, parse_mode=types.ParseMode.HTML)
